@@ -1,6 +1,6 @@
 
 CREATE EXTENSION pgcrypto;
-
+k
 
 insert into clientes(DNI,NOMBRE,APELLIDOPAT,APELLIDOMAT,CELULAR,CLAVE) 
 values ('72417391','JOSE','GARAYAR','PERALTA','989936190',crypt('12345', gen_salt('bf', 8)));
